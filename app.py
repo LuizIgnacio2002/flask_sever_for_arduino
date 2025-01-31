@@ -12,7 +12,7 @@ def send_data():
     # check if request has json data
     if request.is_json:
         data = request.get_json()
-        print(data)
+        print(data + "123456789")
         return 'JSON received!'
     else:
         return 'Request is not JSON!'

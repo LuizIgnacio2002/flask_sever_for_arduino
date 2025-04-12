@@ -17,3 +17,10 @@ def send_data():
     else:
         return 'Request is not JSON!'
 
+@app.route('/test_server', methods=['GET'])
+def test_server():
+    for i in range(1_000_001):
+        # Aquí puedes hacer algo con 'i' si quieres
+        pass
+    return 'Loop completed from 0 to 1,000,000!'
+
